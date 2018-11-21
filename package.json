@@ -1,0 +1,19 @@
+{
+  "name": "noos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "imfunny",
+  "license": "ISC",
+  "dependencies": {
+    "date-and-time": "^0.6.3",
+    "electron": "^3.0.3",
+    "jQuery": "^1.7.4",
+    "systeminformation": "^3.49.3",
+    "vol": "^3.0.0",
+    "wifi-list-windows": "^2.0.2"
+  }
+}
