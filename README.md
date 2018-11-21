@@ -1,5 +1,5 @@
 # NoOS
-an os launcher :rocket:
+An OS launcher (it's an OS but not really an OS) :shrug:
 
 ### Getting started :start:
 ```
