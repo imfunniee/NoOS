@@ -1,7 +1,7 @@
-## NoOS
+# NoOS
 an os launcher :rocket:
 
-# getting started owo
+### Getting started :start:
 ```
 git clone https://github.com/imfunniee/NoOS.git
 npm install
