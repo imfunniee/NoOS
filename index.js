@@ -8,7 +8,7 @@ let mainWindow;
 
 app.on('ready', () => {
 mainWindow = new BrowserWindow({
-    frame: false, //fasle in production
+    frame: false, //false in production
     icon: path.join(__dirname, 'img/icon.png'),
 });
 mainWindow.maximize();
