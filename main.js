@@ -64,18 +64,18 @@ function show_pro(){
     $("#wifi").css("display","none");
     $("#volume").css("display","none");
     $("#processes").css("display", "inherit");
-    $("#processes").addClass("animated zoomInLeft");
+    $("#processes").addClass("animated zoomInDown");
     setTimeout(() => {
-        $("#processes").removeClass("animated zoomInLeft");
+        $("#processes").removeClass("animated zoomInDown");
         $("#pro_btn").attr("onclick","hide_pro()");
     },800);
 }
 function hide_pro() {
     $("#wifi").css("display","none");
     $("#volume").css("display","none");
-    $("#processes").addClass("animated zoomOutRight");
+    $("#processes").addClass("animated zoomOutUp");
     setTimeout(() => {
-        $("#processes").removeClass("animated zoomOutRight");
+        $("#processes").removeClass("animated zoomOutUp");
         $("#pro_btn").attr("onclick","show_pro()");
         $("#processes").css("display", "none");
     },800);

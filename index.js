@@ -8,7 +8,7 @@ let mainWindow;
 
 app.on('ready', () => {
 mainWindow = new BrowserWindow({
-    frame: false, //false in production
+    frame: true, //fasle in production
     icon: path.join(__dirname, 'img/icon.png'),
 });
 mainWindow.maximize();
@@ -17,7 +17,7 @@ mainWindow.on('closed', function(){
     app.quit();
 });
 const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
-Menu.setApplicationMenu(null); //null in production
+Menu.setApplicationMenu(mainMenu); //null in production
 });
 
 //create menu
