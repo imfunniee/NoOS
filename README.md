@@ -7,4 +7,4 @@ git clone https://github.com/imfunniee/NoOS.git
 npm i
 npm start
 ```
->work in progress
+> working on it
