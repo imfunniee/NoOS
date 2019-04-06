@@ -10,5 +10,6 @@ npm start
 
 ### Preview
 
+<img src="https://raw.githubusercontent.com/imfunniee/NoOS/master/img/noos.png" alt="preview">
 
 > working on it
