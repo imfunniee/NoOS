@@ -1,9 +1,9 @@
-const $ = require('jQuery');
 const date = require('date-and-time');
 const wifiList = require('wifi-list-windows');
 const si = require('systeminformation');
 const vol = require('vol');
- 
+//const Fingerprint2 = require('fingerprintjs2');
+
 vol.get().then((level)=> {
     $("#level").html(Math.round(Number(level)*100));
     $("#volumeRange").val(Math.round(Number(level)*100));
@@ -26,37 +26,37 @@ let now = new Date();
 date.setLocales('en', {
     A: ['AM', 'PM']
 });
-var day = date.format(now, 'MMM DD YYYY');
+var day = date.format(now, 'MMM DD');
 var time = date.format(now, 'hh:mm A');
-$("#time").html(`${time}<br>${day}`);
+$("#time").html(`${day} &nbsp; ${time}`);
 setInterval(() => {
 let now = new Date();
 date.setLocales('en', {
     A: ['AM', 'PM']
 });
-var day = date.format(now, 'MMM DD YYYY');
+var day = date.format(now, 'MMM DD');
 var time = date.format(now, 'hh:mm A');
-$("#time").html(`${time}<br>${day}`);
-},30000);
+$("#time").html(`${day} &nbsp; ${time}`);
+},60000);
 
 $("#task_wifi").click(() => {
-    $("#volume").addClass("animated zoomOutUp");
+    $("#volume").addClass("animated zoomOut");
     $("#wifi").css("display","inherit");
-    $("#wifi").addClass("animated zoomInDown");
+    $("#wifi").addClass("animated zoomIn");
     setTimeout(() => {
-        $("#wifi").removeClass("animated zoomInDown");
-        $("#volume").removeClass("animated zoomOutUp");
+        $("#wifi").removeClass("animated zoomIn");
+        $("#volume").removeClass("animated zoomOut");
         $("#volume").css("display","none");
     },800);
 });
 $("#task_vol").click(() => {
-    $("#wifi").addClass("animated zoomOutUp");
+    $("#wifi").addClass("animated zoomOut");
     $("#volume").css("display","inherit");
-    $("#volume").addClass("animated zoomInDown");
+    $("#volume").addClass("animated zoomIn");
     setTimeout(() => {
-        $("#volume").removeClass("animated zoomInDown");
+        $("#volume").removeClass("animated zoomIn");
         $("#wifi").css("display","none");
-        $("#wifi").removeClass("animated zoomOutUp");
+        $("#wifi").removeClass("animated zoomOut");
     },800);
 });
 //for now this is how it shows/hides but in future there will be close,maximize and minimise buttons
@@ -64,24 +64,24 @@ function show_pro(){
     $("#wifi").css("display","none");
     $("#volume").css("display","none");
     $("#processes").css("display", "inherit");
-    $("#processes").addClass("animated zoomInDown");
+    $("#processes").addClass("animated zoomIn");
     setTimeout(() => {
-        $("#processes").removeClass("animated zoomInDown");
+        $("#processes").removeClass("animated zoomIn");
         $("#pro_btn").attr("onclick","hide_pro()");
     },800);
 }
 function hide_pro() {
     $("#wifi").css("display","none");
     $("#volume").css("display","none");
-    $("#processes").addClass("animated zoomOutUp");
+    $("#processes").addClass("animated zoomOut");
     setTimeout(() => {
-        $("#processes").removeClass("animated zoomOutUp");
+        $("#processes").removeClass("animated zoomOut");
         $("#pro_btn").attr("onclick","show_pro()");
         $("#processes").css("display", "none");
     },800);
 }
 //processes thingy ends here
-$("#volumeRange").on("change , mousemove", () => {
+$("#volumeRange").on("click , mousemove", () => {
     var nowVolume = $("#volumeRange").val();
     vol.set(nowVolume/100);
     $("#level").html(nowVolume);

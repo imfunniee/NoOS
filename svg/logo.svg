@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <path id="Subtraction_1" data-name="Subtraction 1" class="cls-1" d="M20,40A20,20,0,0,1,5.858,5.858,20,20,0,0,1,34.142,34.142,19.869,19.869,0,0,1,20,40ZM19.96,6.1A13.859,13.859,0,1,0,33.819,19.96,13.874,13.874,0,0,0,19.96,6.1Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="800" viewBox="0 0 800 800"><defs><style>.a{clip-path:url(#b);}.b{fill:#363636;}.c{fill:#fff;}</style><clipPath id="b"><rect width="800" height="800"/></clipPath></defs><g id="a" class="a"><rect class="c" width="800" height="800"/><rect class="b" width="200" height="537" rx="100" transform="matrix(0.799, -0.602, 0.602, 0.799, 160.902, 246.304)"/><rect width="200" height="500" rx="100" transform="matrix(0.985, 0.174, -0.174, 0.985, 212.931, 143.433)"/><rect width="200" height="500" rx="100" transform="matrix(0.985, 0.174, -0.174, 0.985, 476.931, 125.433)"/></g></svg>

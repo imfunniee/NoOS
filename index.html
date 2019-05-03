@@ -7,7 +7,7 @@
     <title>NoOS</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/icon.png" type="image/png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
@@ -17,21 +17,22 @@
         <table>
             <tr>
                 <td class="home">
-                    <center><img src="svg/logo.svg"></center>
+                    <center><img src="img/icon.png"></center>
                 </td>
                 <td class="centerThingy">
                     <table>
                     <tr>
-                        <td><i class="fas fa-folder" ></i></td>
-                        <td id="pro_btn" onclick="show_pro()"><i class="fas fa-microchip"></i></td>
+                        <td><i class="material-icons">folder</i></td>
+                        <td onclick="show_pro()"><i class="material-icons">desktop_mac</i></td>
+                        <td><i class="material-icons">email</i></td>
                     </tr>
                     </table>
                 </td>
                 <td class="idk">
                     <table>
                         <tr>
-                            <td id="task_wifi"><i class="fas fa-wifi"></i></td>
-                            <td id="task_vol"><i class="fas fa-volume-up"></i></td>
+                            <td id="task_wifi"><i class="material-icons">wifi</i></td>
+                            <td id="task_vol"><i class="material-icons">volume_up</i></td>
                             <td id="time">
                             </td>
                         </tr>
@@ -45,23 +46,14 @@
 
 <div id="content-area">
     <div id="wifi">
-        <h4><i class="fas fa-wifi"></i></h4>
+        <h4><i class="material-icons">wifi</i></h4>
     </div>
     <div id="volume">
-        <i class="fas fa-volume-up"></i><input type="range" min="0" max="100" id="volumeRange"><span id="level"></span>
-    </div>
-    <div id="processes">
-    <p id="pro_number">Processes (0)</p>
-    <table id="real_processes">
-        <tr>
-            <th>Name</th>
-            <th>Pid</th>
-            <th>Priority</th>
-            <th>Started</th>
-        </tr>
-    </table>
+        <i class="material-icons">volume_up</i><input type="range" min="0" max="100" id="volumeRange"><span id="level"></span>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 <script src="main.js" type="text/javascript"></script>
 </body>
 </html>
