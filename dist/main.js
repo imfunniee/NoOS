@@ -49,7 +49,7 @@ date.setLocales('en', {
 });
 var day = date.format(now, 'MMM DD');
 var time = date.format(now, 'hh:mm A');
-$("#time").html(`${day} &nbsp; ${time}`);
+$("#time").html(`${day} &nbsp;${time}`);
 setInterval(() => {
 let now = new Date();
 date.setLocales('en', {
@@ -58,7 +58,7 @@ date.setLocales('en', {
 
 var day = date.format(now, 'MMM DD');
 var time = date.format(now, 'hh:mm A');
-$("#time").html(`${day} &nbsp; ${time}`);
+$("#time").html(`${day} &nbsp;${time}`);
 },60000);
 
 $("#task_wifi").click((e) => {
