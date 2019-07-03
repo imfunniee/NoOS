@@ -4,6 +4,7 @@
 ### Getting started ⁉️
 ```
 git clone https://github.com/imfunniee/NoOS.git
+cd noos
 npm i
 npm start
 ```
