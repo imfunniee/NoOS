@@ -10,10 +10,6 @@ npm start
 
 ### Preview
 
-<img src="https://raw.githubusercontent.com/imfunniee/NoOS/master/img/noos.png" alt="preview">
-
-### Future Plans
-
-make it a privacy concern thingy so you can use it on your current OS but without sacrificing privacy
+<img src="https://raw.githubusercontent.com/imfunniee/NoOS/master/assets/img/browser.PNG" alt="preview">
 
 > working on it
