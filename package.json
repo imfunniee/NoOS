@@ -10,8 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "date-and-time": "^0.6.3",
-    "electron": "^3.0.3",
-    "fingerprintjs2": "^2.0.6",
+    "electron": "^3.1.11",
+    "got": "^9.6.0",
+    "jsdom": "^15.1.1",
     "systeminformation": "^3.49.3",
     "vol": "^3.0.0",
     "wifi-list-windows": "^2.0.2"
